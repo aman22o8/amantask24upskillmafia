@@ -21,7 +21,8 @@ const  App=()=> {
         // console.log("my prev state1",prevState)
        return  prevState.map((each)=>{
           if (productItem.id === each.id) {
-            const updatedQuantity = each.quant + productItem.quant
+            // const updatedQuantity = each.quant + productItem.quant
+            const updatedQuantity = each.quant + 1
             return {...each, quant: updatedQuantity}
           
             
